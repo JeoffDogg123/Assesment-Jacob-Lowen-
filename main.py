@@ -1,1 +1,1 @@
-print("Github")
+import first

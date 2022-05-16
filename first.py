@@ -32,18 +32,18 @@ def test_question():
   test_answer = input("Your answer: ").lower()
 
   if test_answer == "b" or test_answer == "kia ora":
+    print("")
     print("That is correct! You have gained 1 point")
 
   else:
+    print("")
     print("That is inccorect. You have lost 1 point")
+    
 
-def continue_first():
-  print("")
-  print("When you are ready, type 'continue' to continue the quiz ")
-  continue_answer = input()
 
-  
 #Intro
+STARTING_POINTS = 0
+points = STARTING_POINTS
 
 print("Welcome to your favourite Te Reo quiz!")
 print("")
@@ -66,12 +66,55 @@ if test == "yes" or test == "y":
 else:
   print("")
 
+time.sleep(.5)
+print("")
 begin = input("Alright then. Are you ready to begin this quiz? ").lower()
 
 if begin == "yes" or begin == "y":
+  print("")
   print("Here comes your first question")
+  time.sleep(2)
+  print("")
 
 elif begin == "no" or begin == "n":
-  continue_first()
+  print("")
+  print("When you are ready, type 'continue' to continue the quiz ")
+  continue_answer = input()
+
   if continue_answer == "continue":
+    print("")
     print("Here comes your first question")
+    time.sleep(1)
+    print("")
+  
+  else:
+    print("Placeholder")
+
+else:
+  print("Placeholder")
+
+
+
+#Question 1
+
+print("Question 1: ")
+print("")
+print("What is the Maori word for 'Welcome'? ")
+print("")
+print("A. Haere Mai")
+print("B. Tena Koe")
+print("C. Kei Te Pai")
+
+question_1_a = input("Your answer: ").lower()
+
+if question_1_a == "Haere Mai" or question_1_a == "a":
+  print("")
+  print("That is correct! You have gained a point")
+  points += 1
+
+else:
+  print("That is incorrect. You have lost a point")
+  points -= 1
+
+
+#Question 2

@@ -2,6 +2,15 @@
 #Imports
 import time
 
+
+#Quiz Startup
+
+STARTING_POINTS = 0
+points = STARTING_POINTS
+
+
+
+
 #Definitions
 def intro_answer_no():
   print("")
@@ -39,11 +48,31 @@ def test_question():
     print("")
     print("That is inccorect. You have lost 1 point")
     
+#Question Definitions
+
+def Question_1():
+  global points
+  print("Question 1: ")
+  print("")
+  print("What is the Maori word for 'Welcome'? ")
+  print("")
+  print("A. Haere Mai")
+  print("B. Tena Koe")
+  print("C. Kei Te Pai")
+
+  question_1_a = input("Your answer: ").lower()
+
+  if question_1_a == "Haere Mai" or question_1_a == "a":
+    print("")
+    print("That is correct! You have gained a point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost a point")
+    points -= 1
 
 
 #Intro
-STARTING_POINTS = 0
-points = STARTING_POINTS
 
 print("Welcome to your favourite Te Reo quiz!")
 print("")
@@ -97,24 +126,6 @@ else:
 
 #Question 1
 
-print("Question 1: ")
-print("")
-print("What is the Maori word for 'Welcome'? ")
-print("")
-print("A. Haere Mai")
-print("B. Tena Koe")
-print("C. Kei Te Pai")
-
-question_1_a = input("Your answer: ").lower()
-
-if question_1_a == "Haere Mai" or question_1_a == "a":
-  print("")
-  print("That is correct! You have gained a point")
-  points += 1
-
-else:
-  print("That is incorrect. You have lost a point")
-  points -= 1
-
+Question_1()
 
 #Question 2

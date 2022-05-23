@@ -26,6 +26,22 @@ def intro_answer_no():
   print("")
   time.sleep(2)
 
+
+def intro():
+  intro_answer = input("Have you played this quiz before? ").lower()   
+  if intro_answer == "no" or intro_answer == "n":
+    intro_answer_no()
+
+  elif intro_answer == "yes" or intro_answer == "y":
+    print("")
+    print("Lets continue!")
+    print("")
+  
+  else:
+    print("Please answer 'yes' or 'no'")
+    intro()
+
+    
 def test_question():
   print("")
   print("*** TEST QUESTION ***")
@@ -150,7 +166,7 @@ def Question_5():
 
   question_5_a = input("Your answer: ").lower()
 
-  if question_5_a == "Tena Korua" or question_5_a == "a":
+  if question_5_a == "Mountain" or question_5_a == "b":
     print("")
     print("Correct! You have gained 1 point")
     points += 1
@@ -164,24 +180,18 @@ def Question_5():
 
 #Intro
 
+
 print("Welcome to your favourite Te Reo quiz!")
 print("")
-intro_answer = input("Have you played this quiz before? ").lower()
 
-if intro_answer == "no" or intro_answer == "n":
-  intro_answer_no()
-
-else:
-  print("")
-  print("Lets continue!")
-  print("")
+intro()
 
 
 test = input("Would you like to try a test question? ").lower()
 
 if test == "yes" or test == "y":
   test_question()
-
+  
 else:
   print("")
 

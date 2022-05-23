@@ -1,56 +1,71 @@
 import time
 
-STARTING_POINTS = 0
-points = STARTING_POINTS
-
-
-
-
-
-def question_1():
-  global points
-  print("Question 1: ")
+def intro_answer_no():
   print("")
-  print("What is the Maori word for 'Welcome'? ")
+  print("This quiz has 30? levels.") 
   print("")
-  print("A. Haere Mai")
-  print("B. Tena Koe")
-  print("C. Kei Te Pai")
-
-  question_1_a = input("Your answer: ").lower()
-
-  if question_1_a == "Haere Mai" or question_1_a == "a":
-    print("")
-    print("That is correct! You have gained a point")
-    points += 1
-    print(points)
-    question_2()
-
-  else:
-    print("That is incorrect. You have lost a point")
-    points -= 1
-
-
-def question_2():
-  global points
-  print("Question 1: ")
+  time.sleep(2)
+  print("Each level will have multiple choice answers for you to choose from.")
   print("")
-  print("What is the Maori word for 'Welcome'? ")
+  time.sleep(2)
+  print("If you choose the correct answer, you will be awarded a point.")
   print("")
-  print("A. Haere Mai")
-  print("B. Tena Koe")
-  print("C. Kei Te Pai")
+  time.sleep(2)
+  print("If you answer incorrectly, a point will be taken away.")
+  print("")
+  time.sleep(2)
 
-  question_1_a = input("Your answer: ").lower()
 
-  if question_1_a == "Haere Mai" or question_1_a == "a":
-    print("")
-    print("That is correct! You have gained a point")
-    points += 1
-    print(points)
+def intro_answer():
+  intro_answer = input("Have you played this quiz before? ").lower()
 
-  else:
-    print("That is incorrect. You have lost a point")
-    points -= 1
+  while intro_answer != "yes" or intro_answer != "no":
+  
+    if intro_answer == "yes" or intro_answer == "y":
+      break
+  
+    elif intro_answer == "no" or intro_answer == "n":
+      intro_answer_no()
+      break
+    
+    else:
+      print("Placeholder")
+      intro_answer()
 
-question_1()
+
+intro_answer()
+
+print("Placeholder")
+
+
+
+
+
+
+
+    
+"""if intro_answer == "no" or intro_answer == "n":
+  intro_answer_no()
+
+elif intro_answer == "yes" or intro_answer == "y":
+  print("")
+  print("Lets continue!")
+  print("")
+  
+else:
+  print("Please answer 'yes' or 'no'")
+"""
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+#https://www.w3schools.com/python/python_while_loops.asp

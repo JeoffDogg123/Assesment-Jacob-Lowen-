@@ -5,8 +5,7 @@ import time
 
 #Quiz Startup
 
-STARTING_POINTS = 0
-points = STARTING_POINTS
+points = 0
 
 
 
@@ -85,12 +84,83 @@ def Question_2():
 
   if question_2_a == "song" or question_2_a == "c":
     print("")
-    print("That is correct! You have gained a point")
+    print("That is the right answer! You have gained a point")
     points += 1
 
   else:
-    print("That is incorrect. You have lost a point")
+    print("That is the wrong answer. You have lost a point")
     points -= 1
+
+
+def Question_3():
+  
+  global points
+  print("Question 3: ")
+  print("")
+  print("What does the word 'Awa' mean?")
+  print("")
+  print("A. Ocean")
+  print("B. River")
+  print("C. Water")
+
+  question_3_a = input("Your answer: ").lower()
+
+  if question_3_a == "River" or question_3_a == "b":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("Incorrect. You have lost 1 point")
+    points -= 1
+
+
+def Question_4():
+    
+  global points
+  print("Question 4: ")
+  print("")
+  print("What is the Maori phrase for a formal greeting to two people?")
+  print("")
+  print("A. Tena Korua")
+  print("B. Tena Koutou")
+  print("C. Tena Koe")
+
+  question_4_a = input("Your answer: ").lower()
+
+  if question_4_a == "Tena Korua" or question_4_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("Incorrect. You have lost 1 point")
+    points -= 1
+
+def Question_5():
+      
+  global points
+  print("Question 5: ")
+  print("")
+  print("What does the word 'Maunga' mean?")
+  print("")
+  print("A. Island")
+  print("B. Mountain")
+  print("C. Valley")
+
+  question_5_a = input("Your answer: ").lower()
+
+  if question_5_a == "Tena Korua" or question_5_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("Incorrect. You have lost 1 point")
+    points -= 1
+
+
+
 
 #Intro
 
@@ -151,3 +221,15 @@ Question_1()
 #Question 2
 
 Question_2()
+
+#Question_3
+
+Question_3()
+
+#Question 4
+
+Question_4()
+
+#Question 5
+
+Question_5()

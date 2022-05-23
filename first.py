@@ -33,6 +33,7 @@ def intro():
     intro_answer_no()
 
   elif intro_answer == "yes" or intro_answer == "y":
+    intro_answer = intro_answer.lower()
     print("")
     print("Lets continue!")
     print("")
@@ -56,6 +57,7 @@ def test_question():
   test_answer = input("Your answer: ").lower()
 
   if test_answer == "b" or test_answer == "kia ora":
+    test_answer = test_answer.lower()
     print("")
     print("That is correct! You have gained 1 point")
 
@@ -190,6 +192,7 @@ intro()
 test = input("Would you like to try a test question? ").lower()
 
 if test == "yes" or test == "y":
+  test = test.lower()
   test_question()
   
 else:
@@ -200,6 +203,7 @@ print("")
 begin = input("Alright then. Are you ready to begin this quiz? ").lower()
 
 if begin == "yes" or begin == "y":
+  begin = begin.lower()
   print("")
   print("Here comes your first question")
   time.sleep(2)
@@ -208,7 +212,7 @@ if begin == "yes" or begin == "y":
 elif begin == "no" or begin == "n":
   print("")
   print("When you are ready, type 'continue' to continue the quiz ")
-  continue_answer = input()
+  continue_answer = input().lower()
 
   if continue_answer == "continue":
     print("")

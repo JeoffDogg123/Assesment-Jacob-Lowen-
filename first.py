@@ -71,6 +71,26 @@ def Question_1():
     print("That is incorrect. You have lost a point")
     points -= 1
 
+def Question_2():
+  global points
+  print("Question 2: ")
+  print("")
+  print("What does the word 'Waiata' mean?")
+  print("")
+  print("A. Water")
+  print("B. Love")
+  print("C. Song")
+
+  question_2_a = input("Your answer: ").lower()
+
+  if question_2_a == "song" or question_2_a == "c":
+    print("")
+    print("That is correct! You have gained a point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost a point")
+    points -= 1
 
 #Intro
 
@@ -129,3 +149,5 @@ else:
 Question_1()
 
 #Question 2
+
+Question_2()

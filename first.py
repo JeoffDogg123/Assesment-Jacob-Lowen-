@@ -8,9 +8,8 @@ import time
 points = 0
 
 
-
-
 #Definitions
+#Defines the instructions of the quiz.(When called, it will display the instructions of the quiz one line at a time)
 def intro_answer_no():
   print("")
   print("This quiz has 30? levels.") 
@@ -26,7 +25,7 @@ def intro_answer_no():
   print("")
   time.sleep(2)
 
-
+#Defines the introduction question. (At the beginning of the code, the intro question is called, and if chosen, will display instructions)
 def intro():
   intro_answer = input("Have you played this quiz before? ").lower()   
   if intro_answer == "no" or intro_answer == "n":
@@ -42,7 +41,8 @@ def intro():
     print("Please answer 'yes' or 'no'")
     intro()
 
-    
+
+#Defines the test question. (If called, will run the test question by user request)  
 def test_question():
   print("")
   print("*** TEST QUESTION ***")
@@ -64,11 +64,28 @@ def test_question():
   else:
     print("")
     print("That is inccorect. You have lost 1 point")
+
+
+#Defines test qestion response. (Asks the user if they would like to try a test question, and if answered with yes, it will call for the test question)
+def test_question_answers():
+  
+  test = input("Would you like to try a test question? ").lower()
+
+  if test == "yes" or test == "y":
+    test_question()
+  
+  elif test == "no" or test == "n":
+    print("")
     
+  else:
+    print("Please answer 'yes' or 'no'")
+    test_question_answers()
 #Question Definitions
 
+#Defines question 1. (When called, runs the first question)
 def Question_1():
   global points
+  print("")
   print("Question 1: ")
   print("")
   print("What is the Maori word for 'Welcome'? ")
@@ -79,7 +96,7 @@ def Question_1():
 
   question_1_a = input("Your answer: ").lower()
 
-  if question_1_a == "Haere Mai" or question_1_a == "a":
+  if question_1_a == "haere mai" or question_1_a == "a":
     print("")
     print("That is correct! You have gained a point")
     points += 1
@@ -88,8 +105,10 @@ def Question_1():
     print("That is incorrect. You have lost a point")
     points -= 1
 
+#Defines question 2. (When called, runs the second question)
 def Question_2():
   global points
+  print("")
   print("Question 2: ")
   print("")
   print("What does the word 'Waiata' mean?")
@@ -110,9 +129,11 @@ def Question_2():
     points -= 1
 
 
+#Defines question 3. (When called, runs the third question)
 def Question_3():
   
   global points
+  print("")
   print("Question 3: ")
   print("")
   print("What does the word 'Awa' mean?")
@@ -123,7 +144,7 @@ def Question_3():
 
   question_3_a = input("Your answer: ").lower()
 
-  if question_3_a == "River" or question_3_a == "b":
+  if question_3_a == "river" or question_3_a == "b":
     print("")
     print("Correct! You have gained 1 point")
     points += 1
@@ -133,9 +154,11 @@ def Question_3():
     points -= 1
 
 
+#Defines question 4. (When called, runs the fourth question)
 def Question_4():
     
   global points
+  print("")
   print("Question 4: ")
   print("")
   print("What is the Maori phrase for a formal greeting to two people?")
@@ -146,7 +169,7 @@ def Question_4():
 
   question_4_a = input("Your answer: ").lower()
 
-  if question_4_a == "Tena Korua" or question_4_a == "a":
+  if question_4_a == "tena korua" or question_4_a == "a":
     print("")
     print("Correct! You have gained 1 point")
     points += 1
@@ -155,9 +178,11 @@ def Question_4():
     print("Incorrect. You have lost 1 point")
     points -= 1
 
+#Defines question 5. (When called, runs the fith question)
 def Question_5():
       
   global points
+  print("")
   print("Question 5: ")
   print("")
   print("What does the word 'Maunga' mean?")
@@ -168,7 +193,7 @@ def Question_5():
 
   question_5_a = input("Your answer: ").lower()
 
-  if question_5_a == "Mountain" or question_5_a == "b":
+  if question_5_a == "mountain" or question_5_a == "b":
     print("")
     print("Correct! You have gained 1 point")
     points += 1
@@ -187,16 +212,8 @@ print("Welcome to your favourite Te Reo quiz!")
 print("")
 
 intro()
+test_question_answers()
 
-
-test = input("Would you like to try a test question? ").lower()
-
-if test == "yes" or test == "y":
-  test = test.lower()
-  test_question()
-  
-else:
-  print("")
 
 time.sleep(.5)
 print("")
@@ -247,3 +264,15 @@ Question_4()
 #Question 5
 
 Question_5()
+
+if points == 5:
+  print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
+
+elif points >= 3:
+  print("Well done, you almost got them all! You earned", points, "points.")
+
+elif points >= 1:
+  print("You earned", points, "points. You still have some learning to do, but you will get there soon.")
+
+else:
+  print("Unfortunately, you did not gain any points. You may need to practice some more.")

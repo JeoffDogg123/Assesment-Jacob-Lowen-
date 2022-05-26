@@ -244,11 +244,8 @@ def Question_5():
     points -= 1
 
 
-
-
-#Intro
-
-
+    
+#Beggining of quiz code. Calls functions
 
 
 #Welcomes the user to the quiz
@@ -262,10 +259,10 @@ test_question_answers()
 time.sleep(.5)
 print("")
 
+
 begin()
 
-
-
+#The following code calls ALL 30 questions of the quiz
 
 #Question 1
 
@@ -275,7 +272,7 @@ Question_1()
 
 Question_2()
 
-#Question_3
+#Question 3
 
 Question_3()
 
@@ -287,14 +284,102 @@ Question_4()
 
 Question_5()
 
-if points == 5:
-  print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
+#Question 6
 
-elif points >= 3:
-  print("Well done, you almost got them all! You earned", points, "points.")
+Question_6()
 
-elif points >= 1:
-  print("You earned", points, "points. You still have some learning to do, but you will get there soon.")
+#Question 7
 
-else:
-  print("Unfortunately, you either did not gain any points, or you have gained negative points.")
+Question_7()
+
+#Question 8
+
+Question_8()
+
+#Question 9
+
+Question_9()
+
+#Question 10
+
+Question_10()
+
+#Question 11
+
+Question_11()
+
+#Question 12
+
+Question_12()
+
+#Question 13
+
+Question_13()
+
+#Question 14
+
+Question_14()
+
+#Question 15
+
+Question_15()
+
+#Question 16
+
+Question_16()
+
+#Question 17
+
+Question_17()
+
+#Question 18
+
+Question_18()
+
+#Question 19
+
+Question_19()
+
+#Question 20
+
+Question_20()
+
+#Question 11
+
+Question_21()
+
+#Question 22
+
+Question_22()
+
+#Question 23
+
+Question_23()
+
+#Question 24
+
+Question_24()
+
+#Question 25
+
+Question_25()
+
+#Question 26
+
+Question_26()
+
+#Question 27
+
+Question_27()
+
+#Question 28
+
+Question_28()
+
+#Question 29
+
+Question_29()
+
+#Question 30
+
+Question_30()

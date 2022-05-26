@@ -80,6 +80,47 @@ def test_question_answers():
   else:
     print("Please answer 'yes' or 'no'")
     test_question_answers()
+
+def begin():
+  begin = input("Alright then. Are you ready to begin this quiz? ").lower()
+
+  if begin == "yes" or begin == "y":
+    begin = begin.lower()
+    print("")
+    print("Here comes your first question")
+    time.sleep(2)
+    print("")
+  
+  elif begin == "no" or begin == "n":
+    print("")
+    print("When you are ready, type 'continue' to continue the quiz ")
+    continue_answer = input().lower()
+  
+    if continue_answer == "continue":
+      print("")
+      print("Here comes your first question")
+      time.sleep(1)
+      print("")
+    
+    else:
+      print("Placeholder")
+  
+  else:
+    print("Placeholder")
+
+
+def ending():
+  if points == 5:
+    print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
+
+  elif points >= 3:
+    print("Well done, you almost got them all! You earned", points, "points.")
+  
+  elif points >= 1:
+    print("You earned", points, "points. You still have some learning to do, but you will get there soon.")
+  
+  else:
+    print("Unfortunately, you either did not gain any points, or you have gained negative points.")
 #Question Definitions
 
 #Defines question 1. (When called, runs the first question)
@@ -208,6 +249,9 @@ def Question_5():
 #Intro
 
 
+
+
+#Welcomes the user to the quiz
 print("Welcome to your favourite Te Reo quiz!")
 print("")
 
@@ -217,31 +261,9 @@ test_question_answers()
 
 time.sleep(.5)
 print("")
-begin = input("Alright then. Are you ready to begin this quiz? ").lower()
 
-if begin == "yes" or begin == "y":
-  begin = begin.lower()
-  print("")
-  print("Here comes your first question")
-  time.sleep(2)
-  print("")
+begin()
 
-elif begin == "no" or begin == "n":
-  print("")
-  print("When you are ready, type 'continue' to continue the quiz ")
-  continue_answer = input().lower()
-
-  if continue_answer == "continue":
-    print("")
-    print("Here comes your first question")
-    time.sleep(1)
-    print("")
-  
-  else:
-    print("Placeholder")
-
-else:
-  print("Placeholder")
 
 
 
@@ -275,4 +297,4 @@ elif points >= 1:
   print("You earned", points, "points. You still have some learning to do, but you will get there soon.")
 
 else:
-  print("Unfortunately, you did not gain any points. You may need to practice some more.")
+  print("Unfortunately, you either did not gain any points, or you have gained negative points.")

@@ -1,4 +1,4 @@
-import time
+"""import time
 
 def intro_answer_no():
   print("")
@@ -44,7 +44,7 @@ print("Placeholder")
 
 
     
-"""if intro_answer == "no" or intro_answer == "n":
+if intro_answer == "no" or intro_answer == "n":
   intro_answer_no()
 
 elif intro_answer == "yes" or intro_answer == "y":
@@ -54,11 +54,11 @@ elif intro_answer == "yes" or intro_answer == "y":
   
 else:
   print("Please answer 'yes' or 'no'")
-"""
 
 
 
 
+
   
   
   
@@ -68,4 +68,6 @@ else:
   
   
   
-#https://www.w3schools.com/python/python_while_loops.asp
+#https://www.w3schools.com/python/python_while_loops.asp"""
+
+

@@ -1,7 +1,7 @@
 #Multiple choice quiz
 #Imports
 import time
-
+import os
 
 #Quiz Startup
 
@@ -256,8 +256,8 @@ intro()
 test_question_answers()
 
 
-time.sleep(.5)
-print("")
+#time.sleep(.5)
+
 
 
 begin()
@@ -267,22 +267,32 @@ begin()
 #Question 1
 
 Question_1()
+time.sleep(2)
+os.system('clear')
 
 #Question 2
 
 Question_2()
+time.sleep(2)
+os.system('clear')
 
 #Question 3
 
 Question_3()
+time.sleep(2)
+os.system('clear')
 
 #Question 4
 
 Question_4()
+time.sleep(2)
+os.system('clear')
 
 #Question 5
 
 Question_5()
+time.sleep(2)
+os.system('clear')
 
 #Question 6
 

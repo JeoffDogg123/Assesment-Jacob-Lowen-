@@ -81,6 +81,27 @@ def test_question_answers():
     print("Please answer 'yes' or 'no'")
     test_question_answers()
 
+def quiz_continue():
+  print("")
+  print("When you are ready, type 'continue' to continue the quiz ")
+  print("")
+  continue_answer = input().lower()
+    
+  if continue_answer == "continue":
+    print("")
+    print("Here comes your first question")
+    time.sleep(1)
+    print("")
+  
+  elif continue_answer != "continue":
+    print("Please type 'continue'")
+    time.sleep(1)
+    os.system('clear')
+    quiz_continue()
+        
+  else:
+    begin()
+      
 def begin():
   begin = input("Alright then. Are you ready to begin this quiz? ").lower()
 
@@ -92,21 +113,13 @@ def begin():
     print("")
   
   elif begin == "no" or begin == "n":
-    print("")
-    print("When you are ready, type 'continue' to continue the quiz ")
-    continue_answer = input().lower()
-  
-    if continue_answer == "continue":
-      print("")
-      print("Here comes your first question")
-      time.sleep(1)
-      print("")
+    os.system('clear')
+    quiz_continue()
     
-    else:
-      print("Placeholder")
   
   else:
-    print("Placeholder")
+    os.system('clear')
+    quiz_continue()
 
 
 def ending():
@@ -294,7 +307,7 @@ Question_5()
 time.sleep(2)
 os.system('clear')
 
-#Question 6
+"""#Question 6
 
 Question_6()
 
@@ -393,3 +406,4 @@ Question_29()
 #Question 30
 
 Question_30()
+"""

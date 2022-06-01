@@ -123,17 +123,26 @@ def begin():
 
 
 def ending():
-  if points == 5:
+  if points == 10:
     print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
 
-  elif points >= 3:
+  elif points >= 7:
     print("Well done, you almost got them all! You earned", points, "points.")
   
+  elif points >= 5:
+    print("You earned", points, "points. You know your stuff, but I know you can do better!.")
+
+  elif points >= 3:
+    print("You still have some learning to do, but I'm sure you can do it. You earned", points, "points.")
+
   elif points >= 1:
-    print("You earned", points, "points. You still have some learning to do, but you will get there soon.")
-  
+    print("You only earned", points, "points. I recommend you keep practicing your Maori skills")
+
+  elif points < 1:
+    print("You have earned", points, "points. This means that you have answered more questions wrong than right. Please work on your Maori skills")
+    
   else:
-    print("Unfortunately, you either did not gain any points, or you have gained negative points.")
+    print("You have somehow broken my code... If you see this message, please let the author know immediately")
 #Question Definitions
 
 #Defines question 1. (When called, runs the first question)

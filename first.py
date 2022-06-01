@@ -256,6 +256,124 @@ def Question_5():
     print("Incorrect. You have lost 1 point")
     points -= 1
 
+def Question_6():
+      
+  global points
+  print("")
+  print("Question 6: ")
+  print("")
+  print("What does the question 'Kei te pehea koe?' mean? ")
+  print("")
+  print("A. Where am I?")
+  print("B. What time is it?")
+  print("C. How are you? ")
+
+  question_6_a = input("Your answer: ").lower()
+
+  if question_6_a == "how are you?" or question_6_a == "how are you?" or question_6_a == "c":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 7. (When called, runs the seventh question)
+def Question_7():
+      
+  global points
+  print("")
+  print("Question 7: ")
+  print("")
+  print("What is the Maori word for 'House'?")
+  print("")
+  print("A. Whare")
+  print("B. Koru")
+  print("C. Ake")
+
+  question_7_a = input("Your answer: ").lower()
+
+  if question_7_a == "whare" or question_7_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 8. (When called, runs the eighth question)
+def Question_8():
+      
+  global points
+  print("")
+  print("Question 8: ")
+  print("")
+  print("What is the Maori word for 'family'?")
+  print("")
+  print("A. Kauri")
+  print("B. Moana")
+  print("C. Whanau")
+
+  question_8_a = input("Your answer: ").lower()
+
+  if question_8_a == "whanau" or question_8_a == "c":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 9. (When called, runs the ninth question)
+def Question_9():
+      
+  global points
+  print("")
+  print("Question 9: ")
+  print("")
+  print("What does the word 'Teina' mean?")
+  print("")
+  print("A. Brother")
+  print("B. Sister")
+  print("C. Mother")
+
+  question_9_a = input("Your answer: ").lower()
+
+  if question_9_a == "brother" or question_9_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 10. (When called, runs the tenth question)
+def Question_10():
+      
+  global points
+  print("")
+  print("Question 10: ")
+  print("")
+  print("What does the word 'Tuahine' mean?")
+  print("")
+  print("A. Brother")
+  print("B. Sister")
+  print("C. Father")
+
+  question_10_a = input("Your answer: ").lower()
+
+  if question_10_a == "Sister" or question_10_a == "b":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
 
     
 #Beggining of quiz code. Calls functions
@@ -307,103 +425,153 @@ Question_5()
 time.sleep(2)
 os.system('clear')
 
-"""#Question 6
+#Question 6
 
 Question_6()
+time.sleep(2)
+os.system('clear')
 
 #Question 7
 
 Question_7()
+time.sleep(2)
+os.system('clear')
 
 #Question 8
 
 Question_8()
+time.sleep(2)
+os.system('clear')
 
 #Question 9
 
 Question_9()
+time.sleep(2)
+os.system('clear')
 
 #Question 10
 
 Question_10()
-
+time.sleep(2)
+os.system('clear')
+"""
 #Question 11
 
 Question_11()
+time.sleep(2)
+os.system('clear')
 
 #Question 12
 
 Question_12()
+time.sleep(2)
+os.system('clear')
 
 #Question 13
 
 Question_13()
+time.sleep(2)
+os.system('clear')
 
 #Question 14
 
 Question_14()
+time.sleep(2)
+os.system('clear')
 
 #Question 15
 
 Question_15()
+time.sleep(2)
+os.system('clear')
 
 #Question 16
 
 Question_16()
+time.sleep(2)
+os.system('clear')
 
 #Question 17
 
 Question_17()
+time.sleep(2)
+os.system('clear')
 
 #Question 18
 
 Question_18()
+time.sleep(2)
+os.system('clear')
 
 #Question 19
 
 Question_19()
+time.sleep(2)
+os.system('clear')
 
 #Question 20
 
 Question_20()
+time.sleep(2)
+os.system('clear')
 
 #Question 11
 
 Question_21()
+time.sleep(2)
+os.system('clear')
 
 #Question 22
 
 Question_22()
+time.sleep(2)
+os.system('clear')
 
 #Question 23
 
 Question_23()
+time.sleep(2)
+os.system('clear')
 
 #Question 24
 
 Question_24()
+time.sleep(2)
+os.system('clear')
 
 #Question 25
 
 Question_25()
+time.sleep(2)
+os.system('clear')
 
 #Question 26
 
 Question_26()
+time.sleep(2)
+os.system('clear')
 
 #Question 27
 
 Question_27()
+time.sleep(2)
+os.system('clear')
 
 #Question 28
 
 Question_28()
+time.sleep(2)
+os.system('clear')
 
 #Question 29
 
 Question_29()
+time.sleep(2)
+os.system('clear')
 
 #Question 30
 
 Question_30()
+time.sleep(2)
+os.system('clear')
 """

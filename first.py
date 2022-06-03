@@ -33,12 +33,17 @@ def intro():
 
   elif intro_answer == "yes" or intro_answer == "y":
     intro_answer = intro_answer.lower()
+    time.sleep(.5)
     print("")
     print("Lets continue!")
+    time.sleep(.75)
+    os.system('clear')
     print("")
   
   else:
     print("Please answer 'yes' or 'no'")
+    time.sleep(.75)
+    os.system('clear')
     intro()
 
 
@@ -60,10 +65,12 @@ def test_question():
     test_answer = test_answer.lower()
     print("")
     print("That is correct! You have gained 1 point")
+    print("")
 
   else:
     print("")
     print("That is inccorect. You have lost 1 point")
+    print("")
 
 
 #Defines test qestion response. (Asks the user if they would like to try a test question, and if answered with yes, it will call for the test question)
@@ -72,13 +79,18 @@ def test_question_answers():
   test = input("Would you like to try a test question? ").lower()
 
   if test == "yes" or test == "y":
+    time.sleep(.5)
     test_question()
   
   elif test == "no" or test == "n":
+    time.sleep(1)
+    os.system('clear')
     print("")
     
   else:
     print("Please answer 'yes' or 'no'")
+    time.sleep(.75)
+    os.system('clear')
     test_question_answers()
 
 def quiz_continue():
@@ -91,6 +103,7 @@ def quiz_continue():
     print("")
     print("Here comes your first question")
     time.sleep(1)
+    os.system('clear')
     print("")
   
   elif continue_answer != "continue":
@@ -110,9 +123,11 @@ def begin():
     print("")
     print("Here comes your first question")
     time.sleep(2)
+    os.system('clear')
     print("")
   
   elif begin == "no" or begin == "n":
+    time.sleep(1)
     os.system('clear')
     quiz_continue()
     
@@ -394,12 +409,7 @@ print("")
 
 intro()
 test_question_answers()
-
-
-#time.sleep(.5)
-
-
-
+time.sleep(.5)
 begin()
 
 #The following code calls ALL 30 questions of the quiz

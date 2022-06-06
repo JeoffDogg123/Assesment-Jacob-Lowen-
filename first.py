@@ -12,10 +12,10 @@ points = 0
 #Defines the instructions of the quiz.(When called, it will display the instructions of the quiz one line at a time)
 def intro_answer_no():
   print("")
-  print("This quiz has 30? levels.") 
+  print("This quiz has 30 questions.") 
   print("")
   time.sleep(2)
-  print("Each level will have multiple choice answers for you to choose from.")
+  print("Each question will have a multiple choice answer for you to choose from.")
   print("")
   time.sleep(2)
   print("If you choose the correct answer, you will be awarded a point.")
@@ -399,8 +399,127 @@ def Question_10():
     print("That is incorrect. You have lost 1 point")
     points -= 1
 
-    
-#Beggining of quiz code. Calls functions
+#Defines question 11. (When called, runs the eleventh question)
+def Question_11():
+      
+  global points
+  print("")
+  print("Question 11: ")
+  print("")
+  print("What does the word 'Mahi' mean?")
+  print("")
+  print("A. Sleep")
+  print("B. Run")
+  print("C. Work")
+
+  question_11_a = input("Your answer: ").lower()
+
+  if question_11_a == "work" or question_11_a == "c":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 12. (When called, runs the twelth question)
+def Question_12():
+      
+  global points
+  print("")
+  print("Question 12: ")
+  print("")
+  print("What is a 'Kauri'?")
+  print("")
+  print("A. Native Tree")
+  print("B. Native Bird")
+  print("C. Native Insect")
+
+  question_12_a = input("Your answer: ").lower()
+
+  if question_12_a == "native tree" or question_12_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 13. (When called, runs the thirteenth question)
+def Question_13():
+      
+  global points
+  print("")
+  print("Question 13: ")
+  print("")
+  print("What is the Maori word for 'food'?")
+  print("")
+  print("A. Mana")
+  print("B. Kai")
+  print("C. Puku")
+
+  question_13_a = input("Your answer: ").lower()
+
+  if question_13_a == "kai" or question_13_a == "b":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 14. (When called, runs the fourteenth question)
+def Question_14():
+      
+  global points
+  print("")
+  print("Question 14: ")
+  print("")
+  print("What is the Maori word for 'Children'?")
+  print("")
+  print("A. Manuhiri")
+  print("B. Tamariki")
+  print("C. Pounamu")
+
+  question_14_a = input("Your answer: ").lower()
+
+  if question_14_a == "tamariki" or question_14_a == "b":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 15. (When called, runs the fifteenth question)
+def Question_15():
+      
+  global points
+  print("")
+  print("Question 15: ")
+  print("")
+  print("What does the maori word 'Arpha' mean?")
+  print("")
+  print("A. Love")
+  print("B. Hate")
+  print("C. Shoe")
+
+  question_15_a = input("Your answer: ").lower()
+
+  if question_15_a == "love" or question_15_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+    #Beggining of quiz code. Calls functions
 
 
 #Welcomes the user to the quiz
@@ -473,7 +592,8 @@ os.system('clear')
 Question_10()
 time.sleep(2)
 os.system('clear')
-"""
+
+
 #Question 11
 
 Question_11()
@@ -503,7 +623,7 @@ os.system('clear')
 Question_15()
 time.sleep(2)
 os.system('clear')
-
+"""
 #Question 16
 
 Question_16()
@@ -594,3 +714,5 @@ Question_30()
 time.sleep(2)
 os.system('clear')
 """
+
+ending()

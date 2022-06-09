@@ -138,26 +138,30 @@ def begin():
 
 
 def ending():
-  if points == 10:
+  if points == 20:
     print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
 
-  elif points >= 7:
+  elif points >= 17:
     print("Well done, you almost got them all! You earned", points, "points.")
   
-  elif points >= 5:
-    print("You earned", points, "points. You know your stuff, but I know you can do better!.")
+  elif points >= 13:
+    print("Wow, you earned", points, "points! You just have a little more to learn.")
 
-  elif points >= 3:
+  elif points >= 9:
     print("You still have some learning to do, but I'm sure you can do it. You earned", points, "points.")
 
-  elif points >= 1:
-    print("You only earned", points, "points. I recommend you keep practicing your Maori skills")
+  elif points >= 5:
+    print("You earned", points, "points. I know that you can do better!")
 
-  elif points < 1:
-    print("You have earned", points, "points. This means that you have answered more questions wrong than right. Please work on your Maori skills")
+  elif points >= 1:
+    print("You have only earned", points, "points. You need to keep practicing")
     
+  elif points < 1:
+    print("You have earned", points, "points. This means that you have answered more questions wrong than right.\nPlease work on your Maori skills")
+
   else:
     print("You have somehow broken my code... If you see this message, please let the author know immediately")
+    
 #Question Definitions
 
 #Defines question 1. (When called, runs the first question)
@@ -800,64 +804,5 @@ os.system('clear')
 
 #Question 11
 #This code calls question 1 to be run
-"""
-Question_21()
-time.sleep(2)
-os.system('clear')
-
-#Question 22
-
-Question_22()
-time.sleep(2)
-os.system('clear')
-
-#Question 23
-
-Question_23()
-time.sleep(2)
-os.system('clear')
-
-#Question 24
-
-Question_24()
-time.sleep(2)
-os.system('clear')
-
-#Question 25
-
-Question_25()
-time.sleep(2)
-os.system('clear')
-
-#Question 26
-
-Question_26()
-time.sleep(2)
-os.system('clear')
-
-#Question 27
-
-Question_27()
-time.sleep(2)
-os.system('clear')
-
-#Question 28
-
-Question_28()
-time.sleep(2)
-os.system('clear')
-
-#Question 29
-
-Question_29()
-time.sleep(2)
-os.system('clear')
-
-#Question 30
-
-Question_30()
-time.sleep(2)
-os.system('clear')
-"""
 
 #ending()

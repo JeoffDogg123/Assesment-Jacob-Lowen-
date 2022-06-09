@@ -1,18 +1,18 @@
-#Multiple choice quiz
+#This is a Multiple choice quiz based on basic Maori language. This quiz has 30 questions, varying from difficulty to test the users knowledge of Maori language. It will keep track of the users points (The user gains one point if the answer a question correctly, and lose one if they answer incorrectly). At the ned of the quiz, the ending code will be run, giving the user an answer based on how many points the user has gained.
+
+
 #Imports
 import time
 import os
 
-#Quiz Startup
 
-points = 0
 
 
 #Definitions
 #Defines the instructions of the quiz.(When called, it will display the instructions of the quiz one line at a time)
 def intro_answer_no():
   print("")
-  print("This quiz has 30 questions.") 
+  print("This quiz has 20 questions.") 
   print("")
   time.sleep(2)
   print("Each question will have a multiple choice answer for you to choose from.")
@@ -519,8 +519,132 @@ def Question_15():
     print("That is incorrect. You have lost 1 point")
     points -= 1
 
-    #Beggining of quiz code. Calls functions
+#Defines question 16. (When called, runs the sixteenth question)
+def Question_16():
+      
+  global points
+  print("")
+  print("Question 16: ")
+  print("")
+  print("What does the Maori word 'Haka' mean?")
+  print("")
+  print("A. Food")
+  print("B. Love")
+  print("C. Dance")
 
+  question_16_a = input("Your answer: ").lower()
+
+  if question_16_a == "dance" or question_16_a == "c":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+    
+#Defines question 17. (When called, runs the seventeenth question)
+def Question_17():
+      
+  global points
+  print("")
+  print("Question 17: ")
+  print("")
+  print("What is a 'Moa'?")
+  print("")
+  print("A. Giant Extinct Bird")
+  print("B. Large Group Of Fish")
+  print("C. A Small Forest")
+
+  question_17_a = input("Your answer: ").lower()
+
+  if question_17_a == "giant extinct bird" or question_17_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 18. (When called, runs the eighteenth question)
+def Question_18():
+      
+  global points
+  print("")
+  print("Question 18: ")
+  print("")
+  print("What is a 'Waka'?")
+  print("")
+  print("A. Truck")
+  print("B. Canoe")
+  print("C. Plane")
+
+  question_18_a = input("Your answer: ").lower()
+
+  if question_18_a == "canoe" or question_18_a == "b":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 19. (When called, runs the nineteenth question)
+def Question_19():
+      
+  global points
+  print("")
+  print("Question 19: ")
+  print("")
+  print("What is a 'Tangi'?")
+  print("")
+  print("A. Road")
+  print("B. House")
+  print("C. Funeral")
+
+  question_19_a = input("Your answer: ").lower()
+
+  if question_19_a == "funeral" or question_19_a == "c":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+#Defines question 20. (When called, runs the twentieth question)
+def Question_20():
+      
+  global points
+  print("")
+  print("Question 20: ")
+  print("")
+  print("What is a 'Motu'?")
+  print("")
+  print("A. Ocean")
+  print("B. Island")
+  print("C. Country")
+
+  question_20_a = input("Your answer: ").lower()
+
+  if question_20_a == "island" or question_20_a == "a":
+    print("")
+    print("Correct! You have gained 1 point")
+    points += 1
+
+  else:
+    print("That is incorrect. You have lost 1 point")
+    points -= 1
+
+    
+
+#Beggining of quiz code. Calls functions
+
+#Quiz Startup
+points = 0
 
 #Welcomes the user to the quiz
 print("Welcome to your favourite Te Reo quiz!")
@@ -531,63 +655,73 @@ test_question_answers()
 time.sleep(.5)
 begin()
 
-#The following code calls ALL 30 questions of the quiz
+#The following code calls all 30 questions of the quiz 
 
 #Question 1
+#This code calls question 1 to be run
 
 Question_1()
 time.sleep(2)
 os.system('clear')
 
 #Question 2
+#This code calls question 2 to be run
 
 Question_2()
 time.sleep(2)
 os.system('clear')
 
 #Question 3
+#This code calls question 3 to be run
 
 Question_3()
 time.sleep(2)
 os.system('clear')
 
 #Question 4
+#This code calls question 4 to be run
 
 Question_4()
 time.sleep(2)
 os.system('clear')
 
 #Question 5
+#This code calls question 5 to be run
 
 Question_5()
 time.sleep(2)
 os.system('clear')
 
 #Question 6
+#This code calls question 6 to be run
 
 Question_6()
 time.sleep(2)
 os.system('clear')
 
 #Question 7
+#This code calls question 7 to be run
 
 Question_7()
 time.sleep(2)
 os.system('clear')
 
 #Question 8
+#This code calls question 8 to be run
 
 Question_8()
 time.sleep(2)
 os.system('clear')
 
 #Question 9
+#This code calls question 9 to be run
 
 Question_9()
 time.sleep(2)
 os.system('clear')
 
 #Question 10
+#This code calls question 10 to be run
 
 Question_10()
 time.sleep(2)
@@ -595,67 +729,78 @@ os.system('clear')
 
 
 #Question 11
+#This code calls question 11 to be run
 
 Question_11()
 time.sleep(2)
 os.system('clear')
 
 #Question 12
+#This code calls question 12 to be run
 
 Question_12()
 time.sleep(2)
 os.system('clear')
 
 #Question 13
+#This code calls question 13 to be run
 
 Question_13()
 time.sleep(2)
 os.system('clear')
 
 #Question 14
+#This code calls question 14 to be run
 
 Question_14()
 time.sleep(2)
 os.system('clear')
 
 #Question 15
+#This code calls question 15 to be run
 
 Question_15()
 time.sleep(2)
 os.system('clear')
-"""
+
 #Question 16
+#This code calls question 16 to be run
 
 Question_16()
 time.sleep(2)
 os.system('clear')
 
 #Question 17
+#This code calls question 17 to be run
 
 Question_17()
 time.sleep(2)
 os.system('clear')
 
 #Question 18
+#This code calls question 18 to be run
 
 Question_18()
 time.sleep(2)
 os.system('clear')
 
 #Question 19
+#This code calls question 19 to be run
 
 Question_19()
 time.sleep(2)
 os.system('clear')
 
 #Question 20
+#This code calls question 20 to be run
 
 Question_20()
 time.sleep(2)
 os.system('clear')
 
 #Question 11
-
+#This code calls question 1 to be run
+"""
 Question_21()
 time.sleep(2)
 os.system('clear')
@@ -715,4 +860,4 @@ time.sleep(2)
 os.system('clear')
 """
 
-ending()
+#ending()

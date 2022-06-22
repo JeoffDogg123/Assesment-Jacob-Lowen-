@@ -1,7 +1,7 @@
 #Ending code testing
 points = 20
 
-def ending():
+"""def ending():
   if points == 20:
     print("Congratulations, you got all of the questions correct! You earned a total of", points, "points!")
 
@@ -30,4 +30,26 @@ def ending():
 
 
 
-ending()
+ending()"""
+
+def ending2():
+  if points >= 15:
+    bonus_answer = input("You have earned enough points to unlock some bonus questions!\nWould you like to try them? ")
+    
+    bonus_answer = bonus_answer.lower()
+    
+    if bonus_answer == "yes":
+      print("Alright then! Here come your bonus questions.")
+
+      #bonus_question1()
+    
+    elif bonus_answer == "no":
+      print("no")
+
+    else:
+      print("neither")
+
+
+
+
+ending2()

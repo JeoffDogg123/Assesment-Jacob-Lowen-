@@ -35,7 +35,7 @@ def intro():
     intro_answer = intro_answer.lower()
     time.sleep(.5)
     print("")
-    print("Lets continue!")
+    print("Let's continue!")
     time.sleep(.75)
     os.system('clear')
     print("")
@@ -649,7 +649,7 @@ def Question_20():
 
 #Quiz Startup
 points = 0
-
+bonus_points = 0
 #Welcomes the user to the quiz
 print("Welcome to your favourite Te Reo quiz!")
 print("")
@@ -802,7 +802,5 @@ Question_20()
 time.sleep(2)
 os.system('clear')
 
-#Question 11
-#This code calls question 1 to be run
 
 #ending()
